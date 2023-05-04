@@ -12,5 +12,3 @@ masha = Student(height = 200)
 print(masha.height)
 print(Student.count)
 
-
-
