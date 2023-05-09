@@ -7,7 +7,13 @@ class School:
         self.students.append(student)
         print(f'{student.name} був доданий до школи {self.name}') #Дописати, коли створено клас студентыв
     def expel_student(self, student):
-        pass
+        expelled_student = next(filter(lambda s: s.name == student.name
+                                                 and s.grade == student.grade, self.students), None)
+        if expelled_student is not None:
+            self.students_remove(expelled_student)
+            print(f'{expelled_student.name} був видалений з {self.name}')
+        else:
+            print(f'{student.name} не був видалений {self.name}')
 
 
 class Student:
