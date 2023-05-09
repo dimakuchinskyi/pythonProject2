@@ -5,4 +5,8 @@ class School:
         self.students = students #Список студентів
     def admit_student(self, student):
         self.students.append(student)
-        print(f'{}') #Дописати, коли створено клас студентыв
+        print(f'{student.name} був доданий до школи {self.name}') #Дописати, коли створено клас студентыв
+class Student:.
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
