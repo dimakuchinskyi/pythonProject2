@@ -32,7 +32,7 @@ class Student:
         self.grade -= 1
         print(f'{self.name} був понижений {self.grade}')
     def __str__(self):
-        return f'{self.name} - Ранг {self.grade}'
+        return f'{self.name} - Ранг {self.grade}'#gg
 
 '''
 multiply = lambda x, y: x * y
