@@ -6,7 +6,13 @@ class School:
     def admit_student(self, student):
         self.students.append(student)
         print(f'{student.name} був доданий до школи {self.name}') #Дописати, коли створено клас студентыв
-class Student:.
+class Student:
     def __init__(self, name, grade):
         self.name = name
         self.grade = grade
+    def promote(self):
+        self.grade += 1
+        print(f'{self.name} був підвищенй {self.grade}')
+    def demote(self):
+        self.grade -= 1
+        print(f'{self.name} був понижений {self.grade}')
